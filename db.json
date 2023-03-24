@@ -1,0 +1,11 @@
+{
+  "data": [
+    {
+      "name": "María García",
+      "email": "maria.garcia@gmail.com",
+      "phone": "123456789",
+      "message": "Hola, me llamo María.",
+      "id": 1
+    }
+  ]
+}

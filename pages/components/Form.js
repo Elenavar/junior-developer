@@ -108,7 +108,6 @@ const Form = () => {
           onInput={handleForm}
         />
         <small className={styles.small}>
-          {''}
           {errorMsg('Please enter a valid name', errorName)}</small>
       </div>
       <div className={styles.fill}>
@@ -127,7 +126,6 @@ const Form = () => {
           onInput={handleForm}
         />
         <small className={styles.small}>
-          {''}
           {errorMsg('Please enter a valid email', errorEmail)}</small>
       </div>
       <div className={styles.fill}>
@@ -142,7 +140,6 @@ const Form = () => {
           onInput={handleForm}
         />
         <small className={styles.small}>
-          {''}
           {errorMsg('Please enter a valid phone', errorPhone)}</small>
       </div>
       <div className={styles.fill}>
@@ -160,7 +157,6 @@ const Form = () => {
           onInput={handleForm}
         ></textarea>
         <small className={styles.small}>
-          {''}
           {errorMsg('Please enter at least 10 characters', errorText)}</small>
       </div>
       <button className={styles.button} type="submit">Submit</button>

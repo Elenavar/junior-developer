@@ -4,7 +4,7 @@ Este repositorio contiene un proyecto creado con Next JS, en el que se ha desarr
 Para la base de datos en donde se guardan los datos del formulario se ha utilizado JSON Server, que es un módulo npm que permite crear una base de datos falsa a partir de un archivo JSON.
 
 La estructura del proyecto es la siguiente:
--`pages`
+- `pages`
     -\ `api` - Aqui se encuentra el archivo dataForm, en donde se encuentra el endpoint de tipo post que recibe los datos enviados por el formulario. Esta capeta se asigna a `/api/*`, los archivos dentro de ésta se tratan como rutas API. En este caso la ruta de nuestra api sería `/api/dataForm`.
     -/ `components` - En esta carpeta se encuentran los componentes del Header y del Form (formulario).
     -\ `index.js` - Es el archivo principal, en donde están importandos tanto el Header como el Form.

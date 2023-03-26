@@ -7,6 +7,8 @@ const Form = () => {
   const [errorEmail, setErrorEmail] = useState(false);
   const [errorText, setErrorText] = useState(false)
 
+  const [apiFetch, setApiFetch] = useState(false)
+
 
   const [user, setUser] = useState({
     treatment: '',
@@ -25,7 +27,7 @@ const Form = () => {
       }
     } else if (name === 'email') {
       const regExEmail = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
-      if (!regExEmail.test(value)) {
+      if (!regExEmail.test(value) || value==='') {
         setErrorEmail(true)
       } else {
         setErrorEmail(false)
@@ -49,8 +51,8 @@ const Form = () => {
   const handleForm = (ev) => {
     const inputName = ev.target.name;
     const inputValue = ev.target.value;
-    setUser({ ...user, [inputName]: inputValue })
     validateForm(inputName, inputValue)
+    setUser({ ...user, [inputName]: inputValue })
   }
 
   const errorMsg = (errorMsg, error) => {
@@ -61,25 +63,30 @@ const Form = () => {
 
   const handleSubmit = (ev) => {
     ev.preventDefault()
-    fetch("/api/dataForm", {
+    if(!errorEmail && !errorName && !errorPhone && !errorText){
+      setApiFetch(false)
+      fetch("/api/dataForm", {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(user)
-    })
-    setUser({
-      treatment: '',
-      name: '',
-      email: '',
-      phone: '',
-      message: ''
-    })
-  }
+      body: JSON.stringify(user)})
+      setUser({
+        treatment: '',
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+      })
+    }else{
+      setApiFetch(true)
+    }
+    }
 
   return (
     <form
       className={styles.form}
       onSubmit={handleSubmit}
     >
+      <small className={styles.small}>{errorMsg('Please fill in all fields correctly', apiFetch)}</small>
       <div>
         <select onInput={handleForm} className={styles.select} name='treatment'>
           <option >Treatment</option>

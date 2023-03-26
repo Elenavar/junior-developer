@@ -95,8 +95,8 @@ const Form = () => {
     >
       <small className={styles.small}>{errorMsg('Please fill in all fields correctly', apiFetch)}</small>
       <div className={styles.checkbox}>
-        <label className={styles.labelCheck}>Treatment</label>
-        <input type="checkbox" checked={checkbox} onChange={handleCheckbox} className={styles.input}></input>
+        <label htmlFor="checkbox" className={styles.labelCheck}>Treatment</label>
+        <input name="checkbox" type="checkbox" checked={checkbox} onChange={handleCheckbox} className={styles.input}></input>
         {checkbox && (<select onInput={handleForm} className={styles.select} name='treatment'>
           <option >Ms.</option>
           <option >Mr.</option>

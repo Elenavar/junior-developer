@@ -1,6 +1,7 @@
 import { useState } from "react"
 import styles from '../../styles/components/Form.module.css'
 const Form = () => {
+  const [checkbox, setCheckbox] = useState(false)
 
   const [errorName, setErrorName] = useState(false);
   const [errorPhone, setErrorPhone] = useState(false);
@@ -17,6 +18,10 @@ const Form = () => {
     phone: '',
     message: ''
   })
+
+  const handleCheckbox = ()=>{
+    setCheckbox(!checkbox)
+  }
 
   const validateForm = (name, value) => {
     if (name === 'name') {
@@ -89,12 +94,13 @@ const Form = () => {
       onSubmit={handleSubmit}
     >
       <small className={styles.small}>{errorMsg('Please fill in all fields correctly', apiFetch)}</small>
-      <div>
-        <select onInput={handleForm} className={styles.select} name='treatment'>
-          <option >Treatment</option>
+      <div className={styles.checkbox}>
+        <label className={styles.labelCheck}>Treatment</label>
+        <input type="checkbox" checked={checkbox} onChange={handleCheckbox} className={styles.input}></input>
+        {checkbox && (<select onInput={handleForm} className={styles.select} name='treatment'>
           <option >Ms.</option>
           <option >Mr.</option>
-        </select>
+        </select>)}
       </div>
       <div className={styles.fill}>
         <label className={styles.label} htmlFor="name"

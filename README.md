@@ -5,8 +5,8 @@ Para la base de datos en donde se guardan los datos del formulario se ha utiliza
 
 La estructura del proyecto es la siguiente:
 -`pages`
-    -\ `api` - Aqui se encuentra el archivo dataForm, en donde se encuentra el endpoint de tipo post que recibe los datos enviados por el formulario. Esta capeta se asigna a `/api/*`, los archivos dentro de ésta se tratan como rutas API. En este caso la ruta de nuestra api sería `/api/dataForm`.
-    -\ `index.js` - En este archivo se encuentra la parte del front del formulario.
+    - \ `api` - Aqui se encuentra el archivo dataForm, en donde se encuentra el endpoint de tipo post que recibe los datos enviados por el formulario. Esta capeta se asigna a `/api/*`, los archivos dentro de ésta se tratan como rutas API. En este caso la ruta de nuestra api sería `/api/dataForm`.
+    - \ `index.js` - En este archivo se encuentra la parte del front del formulario.
 - `styles` - Carpeta con el archivo Home.module.css que contiene los estilos del proyecto.
 
 

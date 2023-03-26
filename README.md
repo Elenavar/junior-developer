@@ -4,17 +4,7 @@ Este repositorio contiene un proyecto creado con Next JS, en el que se ha desarr
 Para la base de datos en donde se guardan los datos del formulario se ha utilizado JSON Server, que es un módulo npm que permite crear una base de datos falsa a partir de un archivo JSON.
 
 La estructura del proyecto es la siguiente:
-- `services`
-     - \ `api` - A NodeJS project with ExpressJS, TypeScript that implements the API.
-     - \ `front-end` - An Angular project with TypeScript, SCSS, Material and NgRX to implement the web app. Implementation details can be found in `services/front-end/README.md`.
-- `docker-compose.yml` - 
-- `data` - The datasource for the project.
-- `Makefile` - Makefile for your ease of development, see below.
-- `frontend.mk` - Makefile rules for the web app.
-- `backend.mk` - Makefile rules for the API.
-- `README.md` - This file.
-- `LICENSE`
-- 
+
 - `pages`
     - \ `api` - Aqui se encuentra el archivo dataForm, en donde se encuentra el endpoint de tipo post que recibe los datos enviados por el formulario. Esta capeta se asigna a `/api/*`, los archivos dentro de ésta se tratan como rutas API. En este caso la ruta de nuestra api sería `/api/dataForm`.
     - \ `index.js` - En este archivo se encuentra la parte del front del formulario.

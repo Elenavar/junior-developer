@@ -2,107 +2,27 @@
   "data": [
     {
       "treatment": "Ms.",
-      "name": "María García",
-      "email": "maria.garcia@gmail.com",
+      "name": "Ana Pérez",
+      "email": "ana.perez@example.com",
       "phone": "123456789",
-      "message": "Hola, me llamo María.",
+      "message": "Hola, estoy interesada en vuestros servicios. ¿Podéis contactarme para más información?",
       "id": 1
     },
     {
       "treatment": "Ms.",
-      "name": "Sofía Reyes",
-      "email": "sofia@mail.com",
+      "name": "Ana Pérez",
+      "email": "ana.perez@example.com",
       "phone": "123456789",
-      "message": "Hola, me llamo Sofía.",
+      "message": "Hola, estoy interesada en vuestros servicios. ¿Podéis contactarme para más información?",
       "id": 2
     },
     {
       "treatment": "Ms.",
-      "name": "Sofía Reyes",
-      "email": "sofia@mail.com",
+      "name": "Ana Pérez",
+      "email": "ana.perez@example.com",
       "phone": "123456789",
-      "message": "Hola",
+      "message": "Hola, estoy interesada en vuestros servicios. ¿Podéis contactarme para más información?",
       "id": 3
-    },
-    {
-      "treatment": "Ms.",
-      "name": "Sof",
-      "email": "sofia@mail.com",
-      "phone": "123456789",
-      "message": "Hola",
-      "id": 4
-    },
-    {
-      "treatment": "",
-      "name": "as",
-      "email": "elena@gmail.com",
-      "phone": "722702421",
-      "message": "asdasdasdasd",
-      "id": 5
-    },
-    {
-      "treatment": "",
-      "name": "asdasd",
-      "email": "elena@gmail.com",
-      "phone": "722702421",
-      "message": "asdasdasdasd",
-      "id": 6
-    },
-    {
-      "treatment": "",
-      "name": "as",
-      "email": "elena@gmail.com",
-      "phone": "722702421",
-      "message": "asdasdasdasd",
-      "id": 7
-    },
-    {
-      "treatment": "",
-      "name": "as",
-      "email": "elena@gmail.com",
-      "phone": "722702421",
-      "message": "asdasdasdasd",
-      "id": 8
-    },
-    {
-      "treatment": "",
-      "name": "as",
-      "email": "elena@gmail.com",
-      "phone": "722702421",
-      "message": "asdasdasdasd",
-      "id": 9
-    },
-    {
-      "treatment": "",
-      "name": "as",
-      "email": "elena@gmail.com",
-      "phone": "722702421",
-      "message": "asdasdasdasd",
-      "id": 10
-    },
-    {
-      "treatment": "",
-      "name": "as",
-      "email": "elena@gmail.com",
-      "phone": "722702421",
-      "message": "asdasdasdasd",
-      "id": 11
-    },
-    {
-      "treatment": "",
-      "name": "",
-      "email": "elena@gmail.com",
-      "phone": "722702421",
-      "message": "asdasdasdasd",
-      "id": 12
-    },
-    {
-      "treatment": "",
-      "name": "",
-      "email": "elenavargasm9@gmail.com",
-      "phone": "722702421",
-      "message": "asdasdasda",
-      "id": 13
     }
   ]
 }

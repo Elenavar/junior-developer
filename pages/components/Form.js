@@ -31,7 +31,7 @@ const Form = () => {
         setErrorEmail(false)
       }
     } else if (name === 'phone') {
-      const regExPhone = /[6-9]{1}[0-9]{8}/;
+      const regExPhone = /[0-9]{9}/;
       if (!regExPhone.test(value)) {
         setErrorPhone(true)
       } else {
@@ -65,6 +65,13 @@ const Form = () => {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(user)
+    })
+    setUser({
+      treatment: '',
+      name: '',
+      email: '',
+      phone: '',
+      message: ''
     })
   }
 

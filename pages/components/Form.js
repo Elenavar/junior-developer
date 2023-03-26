@@ -27,7 +27,7 @@ const Form = () => {
       }
     } else if (name === 'email') {
       const regExEmail = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
-      if (!regExEmail.test(value) || value==='') {
+      if (!regExEmail.test(value) || value === '') {
         setErrorEmail(true)
       } else {
         setErrorEmail(false)
@@ -63,12 +63,16 @@ const Form = () => {
 
   const handleSubmit = (ev) => {
     ev.preventDefault()
-    if(!errorEmail && !errorName && !errorPhone && !errorText){
+    if (errorEmail || errorName || errorPhone || errorText) {
+      setApiFetch(true)
+
+    } else {
       setApiFetch(false)
       fetch("/api/dataForm", {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(user)})
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(user)
+      })
       setUser({
         treatment: '',
         name: '',
@@ -76,10 +80,8 @@ const Form = () => {
         phone: '',
         message: ''
       })
-    }else{
-      setApiFetch(true)
     }
-    }
+  }
 
   return (
     <form

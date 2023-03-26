@@ -12,6 +12,18 @@
     margin: 0 20px 20px 20px;
     }
 
+    .fill{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .small {
+        font-size: 10px;
+        margin-top: 5px;
+        text-align: center;
+        color: #494a50;
+      }
+
 .label{
     display: none;
 }

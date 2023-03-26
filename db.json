@@ -1,11 +1,20 @@
 {
   "data": [
     {
+      "treatment": "Ms.",
       "name": "María García",
       "email": "maria.garcia@gmail.com",
       "phone": "123456789",
       "message": "Hola, me llamo María.",
       "id": 1
+    },
+    {
+      "teatment": "",
+      "name": "José Muñoz",
+      "email": "jm@gmail.com",
+      "phone": "123456789",
+      "message": "Hola, me llamo José",
+      "id": 2
     }
   ]
 }

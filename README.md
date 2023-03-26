@@ -15,7 +15,7 @@ La estructura del proyecto es la siguiente:
 - `README.md` - This file.
 - `LICENSE`
 - 
--`pages`
+- `pages`
     - \ `api` - Aqui se encuentra el archivo dataForm, en donde se encuentra el endpoint de tipo post que recibe los datos enviados por el formulario. Esta capeta se asigna a `/api/*`, los archivos dentro de ésta se tratan como rutas API. En este caso la ruta de nuestra api sería `/api/dataForm`.
     - \ `index.js` - En este archivo se encuentra la parte del front del formulario.
 - `styles` - Carpeta con el archivo Home.module.css que contiene los estilos del proyecto.
